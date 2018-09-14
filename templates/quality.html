@@ -46,27 +46,33 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+        
       </div>
 
     
       <div class="page-header">
 	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<p>The orginal dataset is not complete. </p>
+	<p>According to to Wrangler, 20 power plant names are missing. For the missing information, N/A was filled.
+	For fuel types, there are 3 missing values for fule1, 26959 missing values for fule2 and 28368 missing values for fule3, for which N/A was filled.
+	For the estimated electricity generation value, 1128 values were missing. Since this value influence the visualization of electricity generation distribution,
+	estimated values were filled for those entries. The ratio between estimated electricity generation over capacity (gwh/mw) was calculated. The average for this ratio
+	is 3.97 and the standard deviation is 11. So for the missing estimated electricity generation, I filled 3.97 * capacity for each entry.</p>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<p>The data is coherent.</p>
+	<p>Based on the map visualization of power plants, heat map for capacity and heat map for elestimated electricity generation, the distributions of these three
+	values are coherent to each other. The visulization and heat maps also match with my expection as the power plant distribution and electricity generation distribution
+	match with population distribution, which make sense as power plants are more likely located at areas where population is concentrated.</p>
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+	<p>To verify the correctness of the dataset, I compared the visualization and heatmaps generated with this dataset with other heatmaps provided by
+	<a href= "https://resourcewatch.org/data/explore?layers=%255B%257B%2522dataset%2522%253A%2522a86d906d-9862-4783-9e30-cdb68cd808b8%2522%252C%2522opacity%2522%253A1%252C%2522visible%2522%253Atrue%252C%2522layer%2522%253A%25222a694289-fec9-4bfe-a6d2-56c3864ec349%2522%257D%255D"> Resource Watch Organization</a>
+	The overall distribution is coherent to the heatmap provided by ResourceWatch.org .</p>
       </div>
 
     </div> <!-- /container -->
