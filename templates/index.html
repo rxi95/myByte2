@@ -54,6 +54,31 @@
       </div> <!-- /page-header -->
     </div> <!-- /container -->
     
+ <div class = "container">
+    <div style="float:left;">
+        <div align="center">
+            <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col5+from+1c7SWWsHnqZP2qPVol_3FEj7eA9PkpWKQ5GQSmdRt&amp;viz=MAP&amp;h=false&amp;lat=23.891534242756&amp;lng=163.70265964507382&amp;t=1&amp;z=3&amp;l=col5&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
+            <p>Power Plant distribution</p>
+        </div>
+    </div>
+
+    <div style="float:right;">
+        <div align = "right"> 
+            <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col4%2C+col5%2C+col3+from+117A2kPexfL9ildGkWdDCF_rQ1DQvPYMo4f2IvZXw+where+col3+%3E%3D+1300+and+col3+%3C%3D+22500+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.45117467630167&amp;lng=36.620649999999955&amp;t=1&amp;z=3&amp;l=col4&amp;y=4&amp;tmplt=4&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.76&amp;hmr=21&amp;hmw=3&amp;hml=TWO_COL_LAT_LNG"></iframe>
+            <p>Electrical Power Production Capacity Heatmap</p>    
+        </div>
+    </div>
+</div>
+
+ <div class = "container">
+    <div style="float:left;">
+        <div align = "center">
+            <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col4%2C+col5%2C+col9+from+117A2kPexfL9ildGkWdDCF_rQ1DQvPYMo4f2IvZXw+where+col9+%3E%3D+5500+and+col9+%3C%3D+93269+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=23.12304179766294&amp;lng=162.30450938614126&amp;t=1&amp;z=3&amp;l=col4&amp;y=3&amp;tmplt=3&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.49&amp;hmr=17&amp;hmw=9&amp;hml=TWO_COL_LAT_LNG"></iframe>
+            <p>Electricity Generation Heatmap</p>    
+        </div>
+    </div>
+</div>
+    
     <div class="button-toolbar" role="toolbar" id="headers" name="headers">
       {% for column in columns %}
       <button type="button" class = "btn-space btn btn-info" id="{{column}}" onclick="updateTable('{{column}}')">{{column}}</button>
